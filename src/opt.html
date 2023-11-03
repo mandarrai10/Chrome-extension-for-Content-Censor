@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>replaceWords Options</title>
+    <link rel="stylesheet" href="opt.css">
+</head>
+
+<body>
+    <div class="keywords-holder">
+        <div class="keyword-row">
+            <div class="input-item keyword">
+                <label>Keyword</label>
+                <input type="text" value="" placeholder="Keyword..." />
+            </div>
+            <div class="input-item type">
+                <label>Select type of Censor</label>
+                <select>
+                    <option value="0">Remove</option>
+                    <option value="1">Replace</option>
+                    <option value="2">Blur</option>
+                </select>
+            </div>
+            <div id="options">
+                <h2>Options</h2>
+                <label for="darkModeToggle">Dark Mode:</label>
+                <input type="checkbox" id="darkModeToggle">
+              </div>              
+            <div class="input-item hidden replace">
+                <label>Replace With</label>
+                <input type="text" value="" placeholder="Replacement word..." />
+            </div><br><br><br><br><br><br>
+            <div class="input-item">
+                <button class="remove">Remove Row</button>
+            </div>
+        </div>
+    </div>
+    <div id="status"></div>
+    <div class="button-container">
+        <button class="add-keyword">Add Another Keyword</button>
+    </div>
+    <br> 
+    <div class="button-container">
+        <button id="save">Save</button>
+    </div>
+    <script src="opt.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+{
+    "name": "Blindeye",
+    "version": "0.1.3",
+    "scripts": {
+        "test": "mocha test/integration-test.js",
+        "test": "mocha"
+    },
+    "description": "Replace words across the web",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "serviceWorker.js"
+    },
+
+    "host_permissions": [ "<all_urls>"],
+
+    "permissions": ["scripting","storage","tabs","activeTab"],
+
+    "options_ui": {
+        "page": "opt.html",
+        "open_in_tab": true
+    }
+}
